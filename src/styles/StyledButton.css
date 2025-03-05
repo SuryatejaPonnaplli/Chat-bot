@@ -1,0 +1,23 @@
+import styled from 'styled-components';
+
+const Button = styled.button`
+    position: absolute;
+    bottom: 20px;                
+    left: 50%;                  
+    transform: translateX(-50%); 
+    background: #077eff;
+    color: white;
+    border: none;
+    font-size: 14px;            
+    font-weight: 500;          
+    padding: 12px 40px;          
+    border-radius: 25px;         
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+
+    &:hover {
+        background: #0658cc;    
+    }
+`;
+
+export default Button;
