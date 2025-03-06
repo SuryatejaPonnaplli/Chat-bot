@@ -1,4 +1,3 @@
-/* Right Sidebar */
 .rs {
   color: white;
   background: #001030;
@@ -11,7 +10,6 @@
   align-items: center;
 }
 
-/* Profile Section */
 .rs-profile {
   text-align: center;
   width: 100%;
@@ -26,7 +24,6 @@
   border-radius: 50%;
 }
 
-/* Profile Text */
 .rs-profile h3 {
   font-size: 18px;
   font-weight: 400;
@@ -43,7 +40,6 @@
   font-weight: 300;
 }
 
-/* Status Dot */
 .rs-profile .green-dot {
   width: 10px;
   height: 10px;
@@ -51,14 +47,12 @@
   background-color: green;
 }
 
-/* Horizontal Line */
 .rs hr {
   border-color: #ffffff50;
   margin: 15px 0;
   width: 80%;
 }
 
-/* Media Section */
 .rs-media {
   width: 100%;
   max-width: 250px;
@@ -88,7 +82,6 @@
   transform: scale(1.1);
 }
 
-/* Button */
 .rs button {
   position: absolute;
   bottom: 20px;
@@ -109,7 +102,6 @@
   background: #005bb5;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .rs {
     height: auto;
