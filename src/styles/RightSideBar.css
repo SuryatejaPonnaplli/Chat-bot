@@ -1,80 +1,191 @@
+/* Right Sidebar */
 .rs {
   color: white;
   background: #001030;
   position: relative;
   height: 75vh;
-  overflow-y: scroll;
+  overflow-y: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Profile Section */
 .rs-profile {
-  padding-top: 60px;
   text-align: center;
+  width: 100%;
   max-width: 70%;
   margin: auto;
+  padding-top: 50px;
 }
 
 .rs-profile img {
-  width: 110px;
+  width: 100px;
   aspect-ratio: 1/1;
   border-radius: 50%;
 }
 
-.rs-profile p {
-  font-size: 10px;
-  opacity: 80%;
-  font-weight: 300;
-}
-.rs hr {
-  border-color: #ffffff50;
-  margin: 15px 0px;
-}
-
-.rs-media {
-  padding: 0px 20px;
-  font-size: 13px;
-}
-
-.rs-media div {
-  max-width: 180px;
-  overflow-y: scroll;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 5px;
-  margin-top: 8px;
-}
-
-.rs-media div img {
-  width: 60px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.rs button {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translate(-50%);
-  background: #077eff;
-  color: white;
-  border: none;
-  font-size: 12px;
-  font-weight: 300;
-  padding: 10px 65px;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
+/* Profile Text */
 .rs-profile h3 {
   font-size: 18px;
   font-weight: 400;
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   align-items: center;
   gap: 5px;
   margin: 5px 0;
 }
 
+.rs-profile p {
+  font-size: 12px;
+  opacity: 80%;
+  font-weight: 300;
+}
+
+/* Status Dot */
 .rs-profile .green-dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
+  background-color: green;
+}
+
+/* Horizontal Line */
+.rs hr {
+  border-color: #ffffff50;
+  margin: 15px 0;
+  width: 80%;
+}
+
+/* Media Section */
+.rs-media {
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.rs-media div {
+  width: 100%;
+  max-width: 180px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.rs-media div img {
+  width: 100%;
+  max-width: 60px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.rs-media div img:hover {
+  transform: scale(1.1);
+}
+
+/* Button */
+.rs button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #077eff;
+  color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 10px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.rs button:hover {
+  background: #005bb5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .rs {
+    height: auto;
+    padding: 10px;
+  }
+
+  .rs-profile {
+    max-width: 90%;
+  }
+
+  .rs-profile img {
+    width: 90px;
+  }
+
+  .rs-profile h3 {
+    font-size: 16px;
+  }
+
+  .rs-profile p {
+    font-size: 11px;
+  }
+
+  .rs-media {
+    max-width: 200px;
+  }
+
+  .rs-media div {
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+  }
+
+  .rs-media div img {
+    max-width: 50px;
+  }
+
+  .rs button {
+    padding: 8px 40px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rs {
+    height: auto;
+    padding: 5px;
+  }
+
+  .rs-profile {
+    max-width: 100%;
+  }
+
+  .rs-profile img {
+    width: 80px;
+  }
+
+  .rs-profile h3 {
+    font-size: 15px;
+  }
+
+  .rs-profile p {
+    font-size: 10px;
+  }
+
+  .rs-media {
+    max-width: 170px;
+  }
+
+  .rs-media div {
+    grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
+  }
+
+  .rs-media div img {
+    max-width: 40px;
+  }
+
+  .rs button {
+    padding: 7px 30px;
+    font-size: 12px;
+  }
 }

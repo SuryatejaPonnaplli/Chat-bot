@@ -22,7 +22,7 @@ const RightSideBar: React.FC = () => {
     } else {
       localStorage.removeItem("user");
     }
-    navigate("/login");
+    navigate("/");
   };
 
   return (
