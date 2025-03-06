@@ -1,0 +1,49 @@
+.login {
+  min-height: 100vh;
+  background: url(/src/assets/background.webp);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.login-form {
+  color: cornsilk;
+  background: linear-gradient(skyblue, rgb(18, 82, 134));
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 10px;
+  width: 300px;
+  margin: 250px auto;
+}
+.login-form h2 {
+  color: #fff;
+  font-weight: 800;
+}
+
+.login-form .btn {
+  margin: 5px;
+  background-color: steelblue;
+}
+
+.form-input {
+  padding: 8px 10px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+.login-toggle {
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.login-toggle span {
+  font-weight: 500;
+  cursor: pointer;
+  color: steelblue;
+}
+
+.spanTag {
+  margin-left: 5px;
+}
