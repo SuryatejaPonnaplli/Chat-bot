@@ -22,7 +22,7 @@ const RightSideBar: React.FC = () => {
     } else {
       localStorage.removeItem("user");
     }
-    navigate("/");
+    navigate("/login");
   };
 
   return (
@@ -30,12 +30,10 @@ const RightSideBar: React.FC = () => {
       <div className="rs-profile">
         <img src={profilepic} alt="Profile" />
         <h3>
-          {user.userName || "Guest"}
-          {user.isLoggedIn && (
-            <img src={greendotbg} className="green-dot" alt="Online Status" />
-          )}
+          Surya Teja
+          <img src={greendotbg} className="green-dot" alt="Online Status" />
         </h3>
-        <p>Hey there, I am {user.userName || "Guest"} using the chat app</p>
+        <p>Hey there, I am Surya Teja using the chat app</p>
       </div>
       <hr />
       <div className="rs-media">
